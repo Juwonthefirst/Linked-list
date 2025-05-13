@@ -26,12 +26,11 @@ A simple JavaScript class for creating double linked list with each element bein
   `linkedList.at(-1) // bar `
   
 - `head` returns the first element in the list
-
+  
   `linkedList.head // foo`
 
 - `tail` returns the first element in the list
-
-`linkedList.tail // bar`
+  `linkedList.tail // bar`
 
 - `pop()` deletes the last node(element) from the list
 
