@@ -11,3 +11,4 @@ list.append("snake");
 list.append("turtle");
 list.prepend('juwon')
 console.log(String(list))
+console.log(list.size)
