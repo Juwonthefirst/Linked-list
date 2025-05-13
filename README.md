@@ -23,19 +23,23 @@ A simple JavaScript class for creating double linked list with each element bein
   `linkedList.at(1) // foo `
 
   it even supports negative indexing
-   `linkedList.at(-1) // bar `
+  `linkedList.at(-1) // bar `
   
 - `head` returns the first element in the list
+
   `linkedList.head // foo`
 
 - `tail` returns the first element in the list
-  `linkedList.tail // bar`
+
+`linkedList.tail // bar`
 
 - `pop()` deletes the last node(element) from the list
+
   `linkedList.pop()`
 
 - `contains(value)` takes an argument "value" and returns true if a node with that value exists
-  `linkedList.contains('foo') // true`
+
+   `linkedList.contains('foo') // true`
 
 - `find(value)` takes an argument "value" and if a node with that value exists it returns the index of the node
   `linkedList.find('bar') // 2`
@@ -49,3 +53,4 @@ A simple JavaScript class for creating double linked list with each element bein
 
 - `removeAt(index)` takes an argument "index" and removes the node at that index
   `linkedList.removeAt(1)`
+  
