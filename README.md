@@ -1,4 +1,4 @@
-## Linked List Class 
+# Linked List Class 
 
 A simple JavaScript class for creating double linked list with each element being a node
 
@@ -8,7 +8,7 @@ A simple JavaScript class for creating double linked list with each element bein
 
 `linkedList.append('foo')`
 
-### Features
+## Features
 
 - `prepend(value)` takes an argument "value" and adds a new element to the front of the list and also to the end if the list is empty
   `linkedList.prepend(foo)`
