@@ -2,7 +2,7 @@
 
 A simple JavaScript class for creating double linked list with each element being a node
 
-`import {LinkedList} from './Linked-list.js'`
+`import {LinkedList} from './linked-list.js'`
 
 `const linkedList = new LinkedList()`
 
