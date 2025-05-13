@@ -6,7 +6,7 @@ class Node {
 	}
 }
 
-class LinkedList {
+export class LinkedList {
 	#head
 	#tail
 	constructor() {
@@ -118,12 +118,12 @@ class LinkedList {
 	}
 	
 	insertAt(value, index) {
-		if(index === -1){
+		if (index === -1) {
 			this.append(value)
 			return
 		}
 		
-		if(index === 0){
+		if (index === 0) {
 			this.prepend(value)
 			return
 		}
@@ -135,19 +135,25 @@ class LinkedList {
 		newNode.next = nodeAtIndex
 	}
 	
-	removeAt(index){
+	removeAt(index) {
 		const nodeAtIndex = this.at(index)
 		const nodeBeforeIndex = nodeAtIndex.prev
 		const nodeAfterIndex = nodeAtIndex.next
+		if (!nodeBeforeIndex) {
+			this.#head = nodeAfterIndex
+			nodeAfterIndex.prev = null
+			return
+		}
+		/*i could have used (this.size - 1) instead of nodeAfterIndex 
+		here but continuously calling a loop will make the process
+		slow if the linked list grows significantly
+		*/
+		if (!nodeAfterIndex) {
+			this.#tail = nodeBeforeIndex
+			nodeBeforeIndex.next = null
+			return
+		}
 		nodeBeforeIndex.next = nodeAfterIndex
 		nodeAfterIndex.prev = nodeBeforeIndex
 	}
 }
-
-const list = new LinkedList()
-list.append('juwon')
-list.append('james')
-list.prepend('first')
-list.removeAt(-1)
-console.log(list.head)
-console.log(String(list))
