@@ -23,7 +23,7 @@ A simple JavaScript class for creating double linked list with each element bein
   `linkedList.at(1) // foo `
 
   it even supports negative indexing
-  `linkedList.at(-1) // bar `
+   `linkedList.at(-1) // bar `
   
 - `head` returns the first element in the list
   `linkedList.head // foo`
