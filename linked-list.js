@@ -13,7 +13,6 @@ export class LinkedList {
 		this.#head = null
 		this.#tail = null
 	}
-	
 	prepend(value) {
 		const newNode = new Node(value)
 		if (!this.#head) {
@@ -50,13 +49,9 @@ export class LinkedList {
 		return nodeCount
 	}
 	
-	get head() {
-		return this.#head
-	}
+	get head() {return this.#head}
 	
-	get tail() {
-		return this.#tail
-	}
+	get tail() {return this.#tail}
 	
 	at(index) {
 		if (index >= 0) {
